@@ -12,22 +12,56 @@
   <header>
 
   </header>
-  <section>
-    <main>
-      <div>
+  <section class="mensaje_bienvenida">
+    <div id="primeraPagina" class="primeraPagina">
+      <div id="bienvenida" class="bienvenida">
         <p>
           Escribe tus mensajes en clave! envíaselo a tu amiga y asi ningun chismoso lo leera
         </p>
-        <button id="siguiente_pagina" type="submit">Escribir</button>
       </div>
-    </main>
+      <div>
+        <button id="siguientePagina" type="button">Escribir</button>
+      </div>
+    </div>
 
   </section>
 
+  <!-- Segunda página -->
+  <section class="cifrador">
+
+    <div class="segundaPagina" id="segundaPagina">
+      <div id="cifrado">
+        <div class="mensaje">
+          <h1>Ingresa tu mensaje:</h1>
+          <textarea id="frase" placeholder="Ingresa aqui tu mensaje..."> </textarea>
+        </div>
+
+        <div class="checkCifrar">
+          <label for="cifrar">Cifrar</label>
+          <input name="radio" type="radio" id="cifrar" checked>
+        </div>
+        <div class="checkDescifrar">
+          <label for="descifrar">Descifrar</label>
+          <input name="radio" type="radio" id="descifrar">
+        </div>
+        <div class="corrimento">
+          <P>Clave: <input id="corrimento" type="number" min="1"  value= "1" max="20"></P>
+        </div>
+        <div>
+          <button type="button" id="resultado"> Mostrar</button>
+        </div>
+        <div class="mensajeCifrado">
+          <h3>Resultado!!!</h3>
+          <p id="respuesta">  </p>
+        </div>
+        <div class="copiarMensaje">
+          <button>Copiar Mensaje</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <script src="index.js" type="module"></script>
-  <script type="text/javacript">
-  
-  </script>
 
 </body>
 
